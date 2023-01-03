@@ -56,7 +56,7 @@ nav a {
     align-items: flex-end;
     background-color: aquamarine;
     width: 100%;
-    background-image: url(./images/IMG_1444.JPG);
+    background-image: url("./images/Ladrillos.jpg");
   }
 
  /*positioning subtitle on first picture below header*/
@@ -114,4 +114,10 @@ h2 {
 }
 
 
-  
+  .section-1 {
+    background-color: rgb(164, 154, 172);
+  }
+
+  .section-2 {
+    background-color: rgb(212, 247, 247);
+  }
