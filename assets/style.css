@@ -1,13 +1,15 @@
 body {
-  
+    margin:0;
+    padding:0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #13293d;
   
 }
 
-
+/*Defining header's parameters*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +20,7 @@ header {
     color: #13293d;
 }
 
+/*h1 parameters*/
 h1 {
     font-size: 170%;
     margin-top: 60px;
@@ -28,19 +31,25 @@ h1 {
     background-color: rgb(157, 207, 207);
     
   }
+/*h2 parameters*/
+  h2 {
+    font-size: 250%;
+    padding-right: 20px;
+  }
   
+/*Unordered list's parameters for navigation bar*/
 nav ul {
     display: flex;
     justify-content: space-between;
     padding-right: 70px;
     min-width: 400px;
   }
-  
+/*Navigation bar's text*/
 nav a {
     color:  rgb(157, 207, 207);
     font-weight: bold;
   }
-  
+ /*hover pseudo class for navigation links*/ 
   nav a:hover {
     color: rgb(197, 206, 77);
   }
@@ -50,7 +59,7 @@ nav a {
   flex-direction: column;
 
   }
-
+/*background image for subtitle*/
   .subheader{
     display: flex;
     justify-content: end;
@@ -60,9 +69,11 @@ nav a {
     background-image: url("./images/Ladrillos.jpg");
    }
 
- /*positioning subtitle on first picture below header*/
+
+ /*Parameters for subtitle on first picture below header*/
   .subheader h2 {
     font-size: 170%;
+    padding: 13px;
     margin-right: 60px;
     margin-bottom: 10px;
     margin-top: 90px;
@@ -70,29 +81,18 @@ nav a {
     background-color: #13293d;
   }
 
-
+/*footer section*/
   footer {
-    display:flex;
-    flex-direction: row;
-    background-color: rgb(219, 216, 216);
-  }
-
-  footer ul {
     display: flex;
-    justify-content: space-between;
-    padding-right: 70px;
-    min-width: 400px;
-  }
-  
-footer a {
-    color:  #13293d;
-    list-style-type: none;
-  }
-  
-  footer a:hover {
-    color: rgb(157, 207, 207);
+    align-items: center;
+    
   }
 
+.section-1 {
+  background-color: rgb(222, 219, 228);
+}
+
+/*left side of main body*/
 .div-left {
   width: 28%;
   float: left;
@@ -100,46 +100,88 @@ footer a {
   border-right: 1px solid black;
 }
 
-.div-right { /*TESTING TESTING setting right side of page as a colum*/
+/*right side of main body*/
+.div-right { 
   display: flex;
   flex-direction: column;
 }
 
-h2 {
-  font-size: 250%;
-  padding-right: 20px;
-}
-
 .div-right p {
   text-align: left;
-  padding-left: 35px;
+  margin: 35px;
+  
 }
 
-
-.section-1 {
-    background-color: rgb(222, 219, 228);
-  }
-
+/*background color of section 2 of main content*/
 .section-2 {
     background-color: rgb(212, 247, 247);
   }
 
-  #top-image {
-    display: block;
-    margin: 35px;
-    border: 1px solid black;
-  
+  /*#top-image {
+  display: flex;
+  width: 92.55%;
+   margin: 35px;
+   border: 1px solid black;*/
+
+   /*Music Page image*/
+#top-image {
+   display: flex;
+   flex-shrink: 1%;
+   justify-content: left;
+   background-color: aquamarine;
+   width: 96.3%;
+   margin-left: 32px;
+   margin-top: 20px;
+   background-image: url("./images/IMG_1893.JPG");
+   background-position-x: center;
+   background-clip:inherit;
   }
+  
+  /*Music Page-text*/
+  #top-image p {
+    font-size: 130%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 200px;
+    color: #13293d;
+    background-color:rgb(157, 207, 207);
+    
+  }
+  
+  /*Container for all 4 pictures in main body*/
   .container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
+  /*Four images below Music Page image*/
 .image {
   display: block;
-  
   margin: 35px;
   border: 1px solid black;
+}
+
+
+/*Footer unordered list for contact links*/
+.div-right ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type:none;
+  padding-right: 70px;
+  min-width: 400px;
+  gap: 100px
+}
+
+/*contact links at bottom's page*/
+.div-right a {
+color:  #13293d;
+  
+  
+}
+/*hover pseudo class*/
+footer a:hover {
+
+  color: rgb(122, 119, 179);
 }
