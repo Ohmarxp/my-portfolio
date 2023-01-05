@@ -86,7 +86,7 @@ nav a {
     display: flex;
     align-items: center;
     
-  }
+  }git
 
 .section-1 {
   background-color: rgb(222, 219, 228);
@@ -153,14 +153,27 @@ nav a {
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
+    justify-content: space-between;
+    margin-top: 20px;
   }
 
   /*Four images below Music Page image*/
 .image {
-  display: block;
-  margin: 35px;
-  border: 1px solid black;
+  /*display: block;*/
+  flex: 1 0 0;
+  justify-content: flex-end;
+  padding-left: 30px;
+  /*border: 1px solid black;*/
+}
+
+/*text below four images*/
+.image p {
+  color: rgb(157, 207, 207);
+  background-color: #13293d;
+  text-align: center;
+  margin: 1px;
+
 }
 
 
