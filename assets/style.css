@@ -163,16 +163,23 @@ nav a {
   /*display: block;*/
   flex: 1 0 0;
   justify-content: flex-end;
+  
   padding-left: 30px;
   /*border: 1px solid black;*/
 }
 
 /*text below four images*/
 .image p {
-  color: rgb(157, 207, 207);
-  background-color: #13293d;
-  text-align: center;
-  margin: 1px;
+  font-size: 130%;
+  color: #13293d;
+  background-color: rgb(157, 207, 207);
+  /*text-align: center;
+  margin: 1px;*/
+  padding:22px;
+  position:relative;
+  top: -8.2rem;
+  left: -1.5rem;
+  
 
 }
 
