@@ -31,6 +31,7 @@ h1 {
     background-color: rgb(157, 207, 207);
     
   }
+
 /*h2 parameters*/
   h2 {
     font-size: 250%;
@@ -41,14 +42,17 @@ h1 {
 nav ul {
     display: flex;
     justify-content: space-between;
+    list-style-type:none;
     padding-right: 70px;
     min-width: 400px;
   }
+
 /*Navigation bar's text*/
 nav a {
     color:  rgb(157, 207, 207);
     font-weight: bold;
   }
+
  /*hover pseudo class for navigation links*/ 
   nav a:hover {
     color: rgb(197, 206, 77);
@@ -59,6 +63,7 @@ nav a {
   flex-direction: column;
 
   }
+
 /*background image for subtitle*/
   .subheader{
     display: flex;
@@ -86,55 +91,53 @@ nav a {
     display: flex;
     align-items: center;
     
-  }git
+  }
 
 .section-1 {
-  background-color: rgb(222, 219, 228);
+  background-color: rgb(157, 207, 207);
+ 
 }
 
-/*left side of main body*/
+/*left side of main*/
 .div-left {
   width: 28%;
   float: left;
   text-align: right;
-  border-right: 1px solid black;
+border-right: 2px solid rgb(206, 214, 214);
+  
 }
 
-/*right side of main body*/
+/*right side of main*/
 .div-right { 
-  display: flex;
+
+ display: flex;
   flex-direction: column;
 }
 
 .div-right p {
   text-align: left;
-  margin: 35px;
-  
+  margin: 35px; 
 }
 
 /*background color of section 2 of main content*/
 .section-2 {
-    background-color: rgb(212, 247, 247);
+    background-color: rgb(157, 207, 207);;
+    
   }
-
-  /*#top-image {
-  display: flex;
-  width: 92.55%;
-   margin: 35px;
-   border: 1px solid black;*/
 
    /*Music Page image*/
 #top-image {
    display: flex;
-   flex-shrink: 1%;
+   flex-shrink: 1px;
    justify-content: left;
    background-color: aquamarine;
    width: 96.3%;
-   margin-left: 32px;
-   margin-top: 20px;
+   margin-left: 1.25em;
+   margin-top: 30px;
    background-image: url("./images/IMG_1893.JPG");
    background-position-x: center;
    background-clip:inherit;
+   border: 6px;
   }
   
   /*Music Page-text*/
@@ -143,7 +146,7 @@ nav a {
     padding: 20px;
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 200px;
+    margin-top: 200px; 
     color: #13293d;
     background-color:rgb(157, 207, 207);
     
@@ -153,19 +156,23 @@ nav a {
   .container {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: flex-start;*/
-    justify-content: space-between;
+    justify-content: center;
+    /*justify-content: space-between;*/
     margin-top: 20px;
   }
+
 
   /*Four images below Music Page image*/
 .image {
   /*display: block;*/
+  margin-bottom: -5em; /*testing position*/
   flex: 1 0 0;
-  justify-content: flex-end;
+  padding-left: 25px;
+  padding-bottom: 1em;
+  height:23em;
+  border: 3px;
+  /*background-color: #13293d;*/
   
-  padding-left: 30px;
-  /*border: 1px solid black;*/
 }
 
 /*text below four images*/
@@ -173,14 +180,11 @@ nav a {
   font-size: 130%;
   color: #13293d;
   background-color: rgb(157, 207, 207);
-  /*text-align: center;
-  margin: 1px;*/
   padding:22px;
+  margin-right: 10em;
   position:relative;
   top: -8.2rem;
   left: -1.5rem;
-  
-
 }
 
 
@@ -204,4 +208,39 @@ color:  #13293d;
 footer a:hover {
 
   color: rgb(122, 119, 179);
+}
+
+
+/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+@media screen and (max-width: 1280px) {
+
+  .image {
+    width: 50%;
+  }
+  header {
+    background: #2b1e3f;
+  
+  }
+  body {
+    display:flex
+  
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .image {
+    width: 50%;
+  }
+  header {
+    background: #0f1d25;
+  
+  }
+  .div-right {
+    display: flex;
+    flex-direction: column;
+  
+
+  }
 }
