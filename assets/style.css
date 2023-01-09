@@ -1,3 +1,4 @@
+/*custom properties*/
 :root {
   --light: rgb(157, 207, 207); 
   --dark: #13293d;
@@ -9,10 +10,8 @@ body {
     padding:0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--dark);
-  
+    color: var(--dark); 
 }
 
 /*Defining header's parameters*/
@@ -94,11 +93,11 @@ nav a {
 
 /*footer section*/
   footer {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;   
   }
 
+  /*background color for the "About Me" section*/
 .section-1 {
   background-color: var(--light);
  
@@ -137,14 +136,12 @@ nav a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-left: 35px;
-  border-left: 2px solid rgb(206, 214, 214);
-  
+  padding-left: 35px; 
 }
+
 /*Parameters for all images inside container*/
 .container div {
   width: 300px; height: 200px; margin: 5px;
-  border: 2px solid rgb(206, 214, 214); /*To be removed*/
   font-size: 1rm; text-align: left; color: rgb(8, 42, 71);
   padding-top : 1em;
   position: relative;
@@ -214,6 +211,7 @@ nav a {
 /*Footer unordered list for contact links*/
 .div-right ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type:none;
   padding-right: 70px;
@@ -224,9 +222,9 @@ nav a {
 /*contact links at bottom's page*/
 .div-right a {
 color: var(--dark);
-  
-  
 }
+
+
 /*hover pseudo class*/
 footer a:hover {
 
@@ -234,36 +232,32 @@ footer a:hover {
 }
 
 
-/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+/* media query to create a responsive display*/
 @media screen and (max-width: 997px) {
 
   .image {
     width: 50%;
   }
-  header {
-    background: #2b1e3f;
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   
   }
-  body {
-    display:flex
-  
 
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .div-right a{
+    display: block;
+    
+  }
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
-
-@media screen and (max-width: 470px) {
-
-  .image {
-    width: 50%;
-  }
-  header {
-    background: #0f3124;
-  
-  }
-  body {
-    display:flex
-  
-
-  }
-}
