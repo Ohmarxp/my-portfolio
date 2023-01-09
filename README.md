@@ -3,6 +3,9 @@
 ## Description
 
 This project is the second challenge assignment for boot camp students. 
+
+This assignment main task was the creation of a portfolio page by putting in practice all skills learned.
+
 In this project, no starter html or CSS code were provided, everything had to be created from scracth.
 
 ## Usage
