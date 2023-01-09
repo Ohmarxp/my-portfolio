@@ -7,8 +7,10 @@ In this project, no starter html or CSS code were provided, everything had to be
 
 ## Usage
 
-To have quick access, click any of the links located on the upper right side of the page: about Me, Work, Contact Me, Resume. 
-The projects in the Work area are still being developed.
+To have quick access, click any of the links located on the upper right side of the page: About Me, Work, Contact Me, Resume.  
+
+Projects in the Work area are still being developed.  
+
 Also, you can click any of the links located at the bottom right side of the page: Cellphone, Mywebsite, Github, Twitter, Bandcamp.
 
 ![Deployed webpage](assets/images/webpage-deployed.png)
