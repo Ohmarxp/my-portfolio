@@ -1,3 +1,9 @@
+:root {
+  --light: rgb(157, 207, 207); 
+  --dark: #13293d;
+  --hover1: rgb(197, 206, 77);
+}
+
 body {
     margin:0;
     padding:0;
@@ -5,7 +11,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #13293d;
+    color: var(--dark);
   
 }
 
@@ -16,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     padding: 1%;
-    background-color: #13293d;
-    color: #13293d;
+    background-color: var(--dark);
+   /* color: #13293d;*/
 }
 
 /*h1 parameters*/
@@ -28,7 +34,7 @@ h1 {
     padding-left: 80px;
     padding-right: 5px;
     margin-bottom: -5px;
-    background-color: rgb(157, 207, 207);
+    background-color: var(--light);
     
   }
 
@@ -49,13 +55,13 @@ nav ul {
 
 /*Navigation bar's text*/
 nav a {
-    color:  rgb(157, 207, 207);
+    color: var(--light);
     font-weight: bold;
   }
 
- /*hover pseudo class for navigation links*/ 
+ /*hover pseudo class for navigation bar's links*/ 
   nav a:hover {
-    color: rgb(197, 206, 77);
+    color: var(--hover1);
   }
 
   main {
@@ -69,21 +75,21 @@ nav a {
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    background-color: aquamarine;
+    background-color: rgb(243, 26, 26);
     width: 100%;
     background-image: url("./images/Ladrillos.jpg");
    }
 
 
- /*Parameters for subtitle on first picture below header*/
+ /*Parameters for subtitle on bricks image, below header*/
   .subheader h2 {
     font-size: 170%;
     padding: 13px;
     margin-right: 60px;
     margin-bottom: 10px;
     margin-top: 90px;
-    color: rgb(157, 207, 207);
-    background-color: #13293d;
+    color: var(--light);
+    background-color: var(--dark);
   }
 
 /*footer section*/
@@ -94,7 +100,7 @@ nav a {
   }
 
 .section-1 {
-  background-color: rgb(157, 207, 207);
+  background-color: var(--light);
  
 }
 
@@ -103,15 +109,18 @@ nav a {
   width: 28%;
   float: left;
   text-align: right;
-border-right: 2px solid rgb(206, 214, 214);
-  
+/*border-right: 2px solid rgb(206, 214, 214);*/
 }
 
+.div-left h2 {
+  border-right: 2px solid rgb(206, 214, 214);
+}
 /*right side of main*/
 .div-right { 
  display: flex;
 }
 
+/*Margin of text on right side of page*/
 .div-right p {
   text-align: left;
   margin: 35px; 
@@ -119,110 +128,44 @@ border-right: 2px solid rgb(206, 214, 214);
 
 /*background color of section 2 of main content*/
 .section-2 {
-    background-color: rgb(157, 207, 207);;
-    
+    background-color: var(--light);   
   }
 
-   /*Music Page image
-   
-#top-image {
-   display: flex;
-   flex-shrink: 1px;
-   justify-content: left;
-   background-color: aquamarine;
-   width: 96.3%;
-   margin-left: 1.25em;
-   margin-top: 30px;
-   background-image: url("./images/IMG_1893.JPG");
-   
-  } 
-
   
-  /*Music Page-text
-  #top-image p {
-    font-size: 130%;
-    padding: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 200px; 
-    color: #13293d;
-    background-color:rgb(157, 207, 207);
-    
-  }
-  
-  /*Container for all 4 pictures in main body
- .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  } 
-
-
-  /*Four images below Music Page image
-.image {
-  flex: 1 0 0;
-  padding-left: 25px;
-  padding-bottom: 1em;
-  height:23em;
-  border: 3px;
-  
-}
-
-/*text below four images*
-.image p {
-  font-size: 130%;
-  color: #13293d;
-  background-color: rgb(157, 207, 207);
-  padding:22px;
-  margin-right: 10em;
-  position:relative;
-  top: -8.2rem;
-  left: -1.5rem;
-}
-*/
-
-
+/*container for all images in Work section*/
 .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding-left: 35px;
+  border-left: 2px solid rgb(206, 214, 214);
   
 }
-
+/*Parameters for all images inside container*/
 .container div {
   width: 300px; height: 200px; margin: 5px;
-  border: 2px solid rgb(206, 214, 214);
+  border: 2px solid rgb(206, 214, 214); /*To be removed*/
   font-size: 1rm; text-align: left; color: rgb(8, 42, 71);
   padding-top : 1em;
   position: relative;
  }
 
-
+/*Parameters for image1 of Work section*/
  .image1 {
   flex: 1 0 calc(100% - 20px);
-  position:relative;
+  position:relative; /*necesario?*/
+  background-color: var(--dark);
   
 }
 
-.image2 {
+/*Backfround color for images*/
+.image2, .image3, .image4, .image5 {
   flex: 1 0 auto;
+  background-color: var(--dark);
+
 }
 
-.image3 {
-  flex: 1 0 auto;
-}
-
-.image4 {
-  flex: 1 0 auto;
-}
-
-.image5 {
-  flex: 1 0 auto;
-}
-
-
+/*Parametters for image 1*/
 .image1 img {
   flex: 1 2 auto;
   width: 98%;
@@ -234,68 +177,39 @@ border-right: 2px solid rgb(206, 214, 214);
  left: .5em;
 }
 
-.image2 img {
- flex: 1 1 auto;
+/*dimensions and position for the following images in the Work section*/
+.image2 img, .image3 img, .image4 img, .image5 img {
   width: 96%;
   height: 200px;
- object-fit:cover;
+ object-fit:cover;/*Necessary?*/
  position: relative;
  bottom: .5em;
  left: .5em;
 }
 
-.image3 img {
-  /*flex: 1 1 auto;
-  width: 100%;
-  height: 220px;
- object-fit:cover;
- position: relative;
- top: -1em;*/
- flex: 1 1 auto;
-  width: 96%;
-  height: 200px;
- object-fit:cover;
- position: relative;
- bottom: .5em;
- left: .5em;
-}
-
-.image4 img {
-  flex: 1 1 auto;
-  width: 96%;
-  height: 200px;
- object-fit:cover;
- position: relative;
- bottom: .5em;
- left: .5em;
-}
-
-.image5 img {
-  flex: 1 1 auto;
-  width: 96%;
-  height: 200px;
- object-fit:cover;
- position: relative;
- bottom: .5em;
- left: .5em;
-}
-
-
-#text {
+/*Parameters for text of images in Work section*/
+#text a {
   z-index: 100;
   position: absolute;
-  color: #13293d;
-  background-color: rgb(157, 207, 207);
-  font-size: 24px;
+  color: var(--light);
+  background-color: var(--dark);
+  font-size: 20px;
   font-weight: bold;
   left: 8px;
-  top:120px;
+  top:170px;
+  list-style-type:none
 }
 
 
+/*hover pseudo class for text over images in Work section*/
+#text a:hover {
 
+  color: var(--hover1);
+}
 
-
+#text a:link {
+  text-decoration: none;
+}
 
 /*Footer unordered list for contact links*/
 .div-right ul {
@@ -304,12 +218,12 @@ border-right: 2px solid rgb(206, 214, 214);
   list-style-type:none;
   padding-right: 70px;
   min-width: 400px;
-  gap: 100px
+  gap: 100px;
 }
 
 /*contact links at bottom's page*/
 .div-right a {
-color:  #13293d;
+color: var(--dark);
   
   
 }
