@@ -39,7 +39,7 @@ h1 {
 
 /*h2 parameters*/
   h2 {
-    font-size: 250%;
+    font-size: 220%;
     padding-right: 20px;
   }
   
@@ -105,6 +105,8 @@ nav a {
 
 /*left side of main*/
 .div-left {
+  display: flex;
+  flex-direction: column;
   width: 28%;
   float: left;
   text-align: right;
@@ -150,7 +152,7 @@ nav a {
 /*Parameters for image1 of Work section*/
  .image1 {
   flex: 1 0 calc(100% - 20px);
-  position:relative; /*necesario?*/
+  position:relative; 
   background-color: var(--dark);
   
 }
@@ -178,7 +180,7 @@ nav a {
 .image2 img, .image3 img, .image4 img, .image5 img {
   width: 96%;
   height: 200px;
- object-fit:cover;/*Necessary?*/
+ object-fit:cover;
  position: relative;
  bottom: .5em;
  left: .5em;
@@ -238,17 +240,18 @@ footer a:hover {
   .image {
     width: 50%;
   }
-  footer {
+   footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  
+    
   }
 
   header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
   }
   .div-right a{
     display: block;
@@ -261,3 +264,9 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 547px) {
+
+  footer h2{
+    font-size: 200%;
+  }
+}
