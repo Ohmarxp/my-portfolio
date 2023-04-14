@@ -1,8 +1,9 @@
 /*custom properties*/
 :root {
   --light: rgb(209, 240, 240); 
-  --dark: #13293d;
-  --hover1: rgb(197, 206, 77);
+  --dark: #288198;
+  --hover1: rgb(219, 224, 156);
+  --header: rgb(246, 245, 229);
 }
 
 body {
@@ -20,26 +21,24 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1%;
+   
     background-color: var(--dark);
-   /* color: #13293d;*/
 }
 
 /*h1 parameters*/
 h1 {
-    font-size: 170%;
-    margin-top: 60px;
-    margin-left: -5px;
-    padding-left: 80px;
-    padding-right: 5px;
-    margin-bottom: -5px;
-    background-color: var(--light);
+  display: flex;
+  font-weight: lighter;
+  font-size: 180%;
+  font-family:cursive;
+  margin-left: 1em;
+  color: var(--header);
     
   }
 
 /*h2 parameters*/
   h2 {
-    font-size: 220%;
+    font-size: 150%;
     padding-right: 20px;
   }
   
@@ -54,8 +53,10 @@ nav ul {
 
 /*Navigation bar's text*/
 nav a {
-    color: var(--light);
-    font-weight: bold;
+    color: var(--header);
+    font-family: cursive;
+    font-weight:lighter;
+    text-decoration: none;
   }
 
  /*hover pseudo class for navigation bar's links*/ 
@@ -69,28 +70,6 @@ nav a {
 
   }
 
-/*background image for subtitle*/
-  .subheader{
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    background-color: rgb(243, 26, 26);
-    width: 100%;
-    background-image: url("./images/Ladrillos.jpg");
-   }
-
-
- /*Parameters for subtitle on bricks image, below header*/
-  .subheader h2 {
-    font-size: 170%;
-    padding: 13px;
-    margin-right: 60px;
-    margin-bottom: 10px;
-    margin-top: 90px;
-    color: var(--light);
-    background-color: var(--dark);
-  }
-
 /*footer section*/
   footer {
   display: flex;
@@ -100,7 +79,6 @@ nav a {
   /*background color for the "About Me" section*/
 .section-1 {
   background-color: var(--light);
- 
 }
 
 /*left side of main*/
@@ -110,9 +88,24 @@ nav a {
   width: 28%;
   float: left;
   text-align: right;
-/*border-right: 2px solid rgb(206, 214, 214);*/
 }
 
+/*parameters for personal image and "About me" h2-text*/
+#about-me {
+  display: flex;
+}
+#about-me img {
+  width: 30%;
+  border-radius: 2em;
+  margin: .5em;
+}
+#about-me h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+/*vertical line on right side of h2 text */
 .div-left h2 {
   border-right: 2px solid rgb(206, 214, 214);
 }
@@ -138,52 +131,26 @@ nav a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-left: 35px; 
+   
 }
 
 /*Parameters for all images inside container*/
 .container div {
-  width: 300px; height: 200px; margin: 5px;
+  width: 400px; height: 250px; margin: 1px;
   font-size: 1rm; text-align: left; color: rgb(8, 42, 71);
   padding-top : 1em;
   position: relative;
  }
 
-/*Parameters for image1 of Work section*/
- .image1 {
-  flex: 1 0 calc(100% - 20px);
-  position:relative; 
-  background-color: var(--dark);
-  
-}
-
-/*Backfround color for images*/
-.image2, .image3, .image4, .image5 {
-  flex: 1 0 auto;
-  background-color: var(--dark);
-
-}
-
-/*Parametters for image 1*/
-.image1 img {
-  flex: 1 2 auto;
-  width: 98%;
-  height: 200px;
- padding: 1px;
-  height: 200px;
- position: relative;
- bottom: .5em;
- left: .5em;
-}
-
 /*dimensions and position for the following images in the Work section*/
-.image2 img, .image3 img, .image4 img, .image5 img {
-  width: 96%;
-  height: 200px;
+.image1 img, .image2 img, .image3 img, .image4 img, .image5 img, .image6 img {
+ width: 100%;
+ height: 250px;
  object-fit:cover;
  position: relative;
  bottom: .5em;
  left: .5em;
+ border-radius: .25em;
 }
 
 /*Parameters for text of images in Work section*/
@@ -191,22 +158,24 @@ nav a {
   z-index: 100;
   position: absolute;
   color: var(--light);
-  background-color: var(--dark);
+  background-color: rgb(8, 43, 60);
   font-size: 20px;
   font-weight: bold;
-  left: 8px;
-  top:170px;
-  list-style-type:none
+  padding: .15em;
+  left:.7em;
+  top:11em;
+  border-radius: .3em;
 }
 
 
 /*hover pseudo class for text over images in Work section*/
 #text a:hover {
-
   color: var(--hover1);
 }
 
 #text a:link {
+  font-family: cursive;
+  font-weight: lighter;
   text-decoration: none;
 }
 
@@ -224,15 +193,14 @@ nav a {
 /*contact links at bottom's page*/
 .div-right a {
 color: var(--dark);
+font-family: cursive;
+text-decoration: none;
 }
-
 
 /*hover pseudo class*/
 footer a:hover {
-
   color: rgb(122, 119, 179);
 }
-
 
 /* media query to create a responsive display*/
 @media screen and (max-width: 997px) {
@@ -250,8 +218,7 @@ footer a:hover {
   header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+    flex-direction: row; 
   }
   .div-right a{
     display: block;
@@ -264,9 +231,19 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 547px) {
+@media screen and (max-width: 772px) {
 
   footer h2{
-    font-size: 200%;
+    font-size: 150%;
+  }
+  
+  h1 {
+   margin-left: auto;
+   margin-right: auto;
+  }
+  #about-me h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
