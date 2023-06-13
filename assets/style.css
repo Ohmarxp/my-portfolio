@@ -136,7 +136,7 @@ nav a {
 
 /*Parameters for all images inside container*/
 .container div {
-  width: 400px; height: 250px; margin: 1px;
+  width: 350px; height: 250px; margin: 1px;
   font-size: 1rm; text-align: left; color: rgb(8, 42, 71);
   padding-top : 1em;
   position: relative;
